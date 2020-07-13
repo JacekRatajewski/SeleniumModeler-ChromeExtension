@@ -1,0 +1,39 @@
+<html>
+
+<head>
+    <title>Selenium Modeler</title>
+    <script src="jquery-3.4.1.min.js"></script>
+    <script src="popup.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Selenium Modeler</h1>
+    <img id="selectElement" class="mini-button" src="aim-1-512-purple.png">
+    <div id="getModel" class="button">Create Model</div>
+    <div id="tabulator">
+        <div id="js-tab" class="tab">
+            JS
+            <div id="js" class="code"></div>
+            <div id="js-result"></div>
+            <textarea class="toCopy"></textarea>
+            <div class="circle download" title="Download">
+                <a href="#" download="filename.js">
+                    <img src="document-download-outline.png"></a>
+            </div>
+        </div>
+        <div id="csharp-tab" class="tab">
+            C#
+            <div id="csharp" class="code"></div>
+            <div id="csharp-result"></div>
+            <textarea class="toCopy"></textarea>
+            <div class="circle download" title="Download">
+                <a href="#" download="filename.cs">
+                    <img src="document-download-outline.png"></a>
+            </div>
+        </div>
+        <div class="circle copy" title="Copy"><img src="clipboard-copy-512.png"></div>
+    </div>
+</body>
+
+</html>
