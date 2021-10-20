@@ -1,0 +1,42 @@
+{
+  "name": "SeM",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/electron/main.js",
+  "scripts": {
+    "electron": "electron .",
+    "webpack": "webpack --config webpack.config.chrome.js",
+    "server": "node server.js",
+    "start": "webpack --config webpack.config.chrome.js && webpack --config webpack.config.electron.js &&  webpack --config webpack.config.pip.js && node server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/chrome": "0.0.159",
+    "copy-webpack-plugin": "^9.0.1",
+    "css-loader": "^6.4.0",
+    "css-minimizer-webpack-plugin": "^3.1.1",
+    "electron": "^15.1.2",
+    "html-loader": "^2.1.2",
+    "html-webpack-plugin": "^5.3.2",
+    "html2canvas": "^1.3.2",
+    "mini-css-extract-plugin": "^2.4.2",
+    "rxjs": "^7.4.0",
+    "sass": "^1.42.1",
+    "sass-loader": "^12.1.0",
+    "ts-loader": "^9.2.6",
+    "typescript": "^4.4.3",
+    "webpack": "^5.58.1",
+    "webpack-cli": "^4.9.0",
+    "webpack-merge": "^5.8.0"
+  },
+  "browser": {
+    "fs": false,
+    "path": false,
+    "os": false
+  },
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}

@@ -1,0 +1,14 @@
+1. Add query page for elements to model. - ✔️
+2. Process queried elements to models.:
+    2.1 Create Models for POM - ✔️
+    2.2 Generate POM string based on lang
+3. Send models to server.
+4. Create display models module.
+5. Display models in node.js server.
+6. Display models in electron:
+    6.1 Connect to node.js server
+    6.2 Display models
+7. Display models in picture-in-picture:
+    7.1 Implement html2pdf
+    7.2 Display canvas in media player
+8. Add cursor mode

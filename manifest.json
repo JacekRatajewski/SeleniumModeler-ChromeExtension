@@ -1,7 +1,7 @@
 {
     "manifest_version": 2,
     "name": "Selenium.Modeler",
-    "description": "Selenium.Modeler privdes models in JS and C# for PageObjectPattern",
+    "description": "Selenium.Modeler - Page Object Pattern DOM Elements provider.",
     "version": "1.0",
     "content_scripts": [
         {
@@ -9,16 +9,18 @@
                 "<all_urls>"
             ],
             "js": [
-                "jquery-3.4.1.min.js",
-                "content.js"
+                "query.bundle.js",
+                "modeler.bundle.js",
+                "cursor.bundle.js",
+                "pip.bundle.js"
             ]
         }
     ],
     "browser_action": {
-        "default_icon": "icon.png",
-        "default_popup": "popup.html"
+        "default_icon": "assets/SeMLogo.png",
+        "default_popup": "core.html"
     },
-    "icons": { "16": "icon.png" },
+    "icons": { "16": "assets/SeMLogo.png" },
     "permissions": [
         "activeTab",
         "tabs",
